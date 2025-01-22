@@ -22,7 +22,7 @@ deploy_script:
       $username = "appveyor"
       $password = "Vatt3laPesca!"
       $server = "ftp.intelli-design.co.uk"
-      $localFilePath = "/public_html/temp"
+      $localFilePath = "public_html/temp"
 
       curl -T $localFilePath -u "$username:$password" $server
 
