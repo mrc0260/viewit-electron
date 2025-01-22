@@ -17,6 +17,10 @@ install:
 build_script:
   - yarn dist
 
+artifacts:
+  - path: dist/
+    name: ElectronApp
+
 deploy_script:
   - ps: |
       $username = "appveyor"
