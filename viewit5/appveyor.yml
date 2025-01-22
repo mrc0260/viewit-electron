@@ -17,4 +17,13 @@ install:
 build_script:
   - yarn dist
 
+deploy_script:
+  - ps: |
+      $username = appveyor"
+      $password = "Vatt3laPesca!"
+      $server = "ftp.intelli-design.co.uk"
+      $localFilePath = "/home/u531362439/domains/intelli-design.co.uk/public_html/temp"
+
+      curl -T $localFilePath -u "$username:$password" $server
+
 test: off
