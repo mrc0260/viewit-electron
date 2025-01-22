@@ -19,7 +19,7 @@ build_script:
 
 deploy_script:
   - ps: |
-      $username = appveyor"
+      $username = "appveyor"
       $password = "Vatt3laPesca!"
       $server = "ftp.intelli-design.co.uk"
       $localFilePath = "/home/u531362439/domains/intelli-design.co.uk/public_html/temp"
